@@ -21,7 +21,7 @@ int main()
         {
             y=10+2.5*(x-2);
         }
-        printf("Should pay%.2f",y);
+        printf("Should pay%.2f:",y);
     }
     return  0;
 }
