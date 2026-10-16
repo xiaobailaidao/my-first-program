@@ -11,15 +11,17 @@ int main()
     {
         printf("Are you ok?");
     }
-    else if(x<=2)
-    {
-       y= 10;
-    }
     else
     {
-        y=10+2.5*(x-2);
+        if(x<=2)
+        {
+           y= 10;
+        }
+        else
+        {
+            y=10+2.5*(x-2);
+        }
+        printf("Should pay%.2f",y);
     }
-    
-    printf("应付%.2f元",y);
     return  0;
 }
