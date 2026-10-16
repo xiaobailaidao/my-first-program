@@ -5,9 +5,13 @@
 int main()
 {
     float   x,y;
-    printf("请输入里程 ");
+    printf("please input mileage ");//  我加了一个空格，我觉得可以将输入数字和前面内容隔开
     scanf("%f",&x);
-    if(x<=2)
+    if(x<0)
+    {
+        printf("Are you ok?");
+    }
+    else if(x<=2)
     {
        y= 10;
     }
@@ -15,6 +19,7 @@ int main()
     {
         y=10+2.5*(x-2);
     }
+    
     printf("应付%.2f元",y);
     return  0;
 }
